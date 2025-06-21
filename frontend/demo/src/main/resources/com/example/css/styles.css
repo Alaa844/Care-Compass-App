@@ -1,0 +1,197 @@
+/* Root Styles */
+.root {
+    -fx-background-color: #89CFF0; /* Baby Blue */
+    -fx-padding: 20px;
+}
+
+/* Text Styles */
+.text {
+    -fx-font-family: "Arial";
+    -fx-fill: #333333; /* Dark Gray */
+}
+
+/* Main Titles (Care Compass, HealthSync AI, PREMS, PROMS) */
+.text-title-large {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-fill: #2F4F4F; /* Dark Slate Gray */
+}
+
+/* Subtitles (World's Leading AI Medical Assistant) */
+.text-title-medium {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #2F4F4F; /* Dark Slate Gray */
+}
+
+/* Smaller Text (Labels, Descriptions) */
+.text-small {
+    -fx-font-size: 18px;
+    -fx-fill: #333333; /* Dark Gray */
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #4682B4; /* Steel Blue */
+    -fx-text-fill: #FFFFFF; /* White */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: #3A6F9A; /* Slightly darker Steel Blue */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 2, 2);
+}
+
+/* Button Hover Effect */
+.button:hover {
+    -fx-background-color: #5A9BD5; /* Lighter Steel Blue */
+}
+
+/* Hyperlink Styles */
+.hyperlink {
+    -fx-text-fill: #4682B4; /* Steel Blue */
+    -fx-font-size: 14px;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #5A9BD5; /* Lighter Steel Blue */
+    -fx-underline: true;
+}
+
+/* Input Fields (TextField, PasswordField, TextArea) */
+.text-field, .password-field, .text-area {
+    -fx-background-color: #FFFFFF; /* White */
+    -fx-border-color: #CCCCCC; /* Light Gray */
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Dark Gray */
+}
+
+/* ComboBox and Spinner */
+.combo-box, .spinner {
+    -fx-background-color: #FFFFFF; /* White */
+    -fx-border-color: #CCCCCC; /* Light Gray */
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+/* ComboBox Dropdown Items */
+.combo-box .list-cell {
+    -fx-text-fill: #333333; /* Dark Gray */
+}
+
+/* Spinner Arrows */
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button {
+    -fx-background-color: #4682B4; /* Steel Blue */
+}
+
+.spinner .increment-arrow-button:hover, .spinner .decrement-arrow-button:hover {
+    -fx-background-color: #5A9BD5; /* Lighter Steel Blue */
+}
+
+/* SplitPane Styling */
+.split-pane {
+    -fx-background-color: transparent;
+}
+
+.split-pane-divider {
+    -fx-background-color: #2F4F4F; /* Dark Slate Gray */
+}
+
+/* Service Boxes in hello-view.fxml */
+.service-box {
+    -fx-background-color: #E0FFFF; /* Light Cyan */
+    -fx-border-color: #4682B4; /* Steel Blue */
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.service-box .text {
+    -fx-fill: #2F4F4F; /* Dark Slate Gray */
+    -fx-font-size: 14px;
+}
+
+/* Chatbot Specific Styles */
+#chatBox .label {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+/* User Messages in Chatbot */
+#chatBox .label:starts-with("You:") {
+    -fx-text-fill: #4682B4; /* Steel Blue */
+    -fx-background-color: #E0FFFF; /* Light Cyan */
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+/* Bot Messages in Chatbot */
+#chatBox .label:starts-with("Bot:") {
+    -fx-text-fill: #1A5C5C; /* Dark Teal */
+    -fx-background-color: #D1E8E2; /* Pale Cyan */
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+/* Error Messages in Chatbot */
+#chatBox .label:starts-with("Bot: Error"), #chatBox .label:starts-with("Bot: Failed"), #chatBox .label:starts-with("Bot: Request"), #chatBox .label:starts-with("Bot: Polling") {
+    -fx-text-fill: #DC143C; /* Crimson */
+}
+
+/* Thinking Message in Chatbot */
+#chatBox .label:starts-with("HealthSyncAI") {
+    -fx-text-fill: #555555; /* Medium Gray */
+    -fx-font-style: italic;
+}
+
+/* ScrollPane in Chatbot */
+.scroll-pane {
+    -fx-background-color: #FFFFFF; /* White */
+    -fx-border-color: #CCCCCC; /* Light Gray */
+    -fx-border-width: 1px;
+}
+
+/* Error Labels (loginMessage, regMessage) */
+.error-label {
+    -fx-text-fill: #DC143C; /* Crimson */
+    -fx-font-size: 14px;
+}
+
+/* Success Labels (statusLabel in feedback) */
+.success-label {
+    -fx-text-fill: #228B22; /* Forest Green */
+    -fx-font-size: 14px;
+}
+
+/* Alert Styles */
+.alert {
+    -fx-background-color: #E0FFFF; /* Light Cyan */
+}
+
+.alert .content {
+    -fx-text-fill: #2F4F4F; /* Dark Slate Gray */
+    -fx-font-size: 14px;
+}
+
+.alert .header {
+    -fx-text-fill: #2F4F4F; /* Dark Slate Gray */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Dialog Pane (for Alerts) */
+.dialog-pane {
+    -fx-background-color: #E0FFFF; /* Light Cyan */
+}
+
+.dialog-pane .button {
+    -fx-background-color: #4682B4; /* Steel Blue */
+    -fx-text-fill: #FFFFFF; /* White */
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #5A9BD5; /* Lighter Steel Blue */
+}

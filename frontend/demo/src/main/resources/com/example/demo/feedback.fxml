@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx" stylesheets="@../css/styles.css" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.controller.FeedbackController" minWidth="800" minHeight="600">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label fx:id="welcomeLabel" text="Tell us what you think..." styleClass="text-small" />
+
+    <HBox spacing="10">
+        <Label text="Doctor:" styleClass="text-small"/>
+        <ComboBox fx:id="doctorDropdown" promptText="Select Doctor"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Doctor Rating:" styleClass="text-small"/>
+        <ComboBox fx:id="doctorRating" promptText="Rate (1-5)"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Service Rating:" styleClass="text-small"/>
+        <ComboBox fx:id="serviceRating" promptText="Rate (1-5)"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Clinic Rating:" styleClass="text-small"/>
+        <Spinner fx:id="clinicRatingSpinner" prefWidth="100"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Time Taken (minutes):" styleClass="text-small"/>
+        <TextField fx:id="timeTakenField" promptText="e.g., 5" prefWidth="100"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Medicine Rating:" styleClass="text-small"/>
+        <ComboBox fx:id="medicineRating" promptText="Rate (1-5)"/>
+    </HBox>
+
+    <TextArea fx:id="commentBox" promptText="Write your comment..." prefRowCount="4" wrapText="true"/>
+
+    <Button fx:id="submitButton" text="Submit Feedback" onAction="#submitFeedback"/>
+
+    <Label fx:id="statusLabel" styleClass="success-label"/>
+
+    <Button fx:id="backButton" text="Back to Main" onAction="#switchToMain"/>
+</VBox>
