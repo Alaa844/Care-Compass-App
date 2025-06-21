@@ -26,7 +26,7 @@ import static java.util.Collections.replaceAll;
 public class ChatbotController {
 
     private final String API_URL = "https://openrouter.ai/api/v1/chat/completions";
-    private final String API_KEY = "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";
+    private final String API_KEY = "empty now";
 
     @Autowired
     private DoctorSuggestionService doctorService;
